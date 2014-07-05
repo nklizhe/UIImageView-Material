@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Qn4-54-DKT">
+                                <rect key="frame" x="8" y="28" width="304" height="476"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GE4-jT-gcy">
+                                <rect key="frame" x="100" y="512" width="120" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="Zhj-gy-rAZ"/>
+                                    <constraint firstAttribute="width" constant="120" id="zdI-je-d1c"/>
+                                </constraints>
+                                <state key="normal" title="Fade In">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8Gu-YL-pTi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Qn4-54-DKT" secondAttribute="bottom" constant="64" id="BGy-dL-931"/>
+                            <constraint firstAttribute="centerX" secondItem="GE4-jT-gcy" secondAttribute="centerX" id="Li2-R4-Teq"/>
+                            <constraint firstAttribute="trailing" secondItem="Qn4-54-DKT" secondAttribute="trailing" constant="8" id="NfC-kP-U0O"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="GE4-jT-gcy" secondAttribute="bottom" constant="8" id="YQc-tA-eRI"/>
+                            <constraint firstItem="Qn4-54-DKT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="8" id="p1a-jW-Rxz"/>
+                            <constraint firstItem="Qn4-54-DKT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="qEN-ke-eE4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="GE4-jT-gcy" id="GFm-C4-3kB"/>
+                        <outlet property="imageView" destination="Qn4-54-DKT" id="Hgt-Kb-O0q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
